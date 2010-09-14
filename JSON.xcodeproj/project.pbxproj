@@ -49,7 +49,7 @@
 		535158740F70DE7B00C8AABD /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 535158720F70DE7B00C8AABD /* SBJsonBase.m */; };
 		53C45B9C0C98A87600546F66 /* ErrorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C45B9B0C98A87600546F66 /* ErrorTest.m */; };
 		53D2299C0C96129800276605 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D2299A0C96129800276605 /* JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53D229AD0C961B9900276605 /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D229810C96121600276605 /* JSON.framework */; };
+		53D229AD0C961B9900276605 /* JSON in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D229810C96121600276605 /* JSON */; };
 		53EF4D4E0DC2483C005F5E6D /* bench.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EF4D4D0DC2483C005F5E6D /* bench.m */; };
 		53EF4F9F0DC52FEB005F5E6D /* libjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2BBD800D8B0D3900184787 /* libjson.a */; };
 		53F8A8150E57158200355C72 /* libjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2BBD800D8B0D3900184787 /* libjson.a */; };
@@ -303,12 +303,12 @@
 		5355C86B0E392B2A00A18C15 /* ErrorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorTest.h; sourceTree = "<group>"; };
 		5355C86C0E392B2A00A18C15 /* DataDrivenTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataDrivenTest.h; sourceTree = "<group>"; };
 		53C45B9B0C98A87600546F66 /* ErrorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorTest.m; sourceTree = "<group>"; };
-		53D229810C96121600276605 /* JSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D229810C96121600276605 /* JSON */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.framework; path = JSON; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D229830C96121600276605 /* JSON-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSON-Info.plist"; sourceTree = "<group>"; };
 		53D2298D0C96122A00276605 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D2298E0C96122A00276605 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		53D2299A0C96129800276605 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		53EF4D400DC247B3005F5E6D /* bench */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bench; sourceTree = BUILT_PRODUCTS_DIR; };
+		53EF4D400DC247B3005F5E6D /* bench */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = bench; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EF4D4D0DC2483C005F5E6D /* bench.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bench.m; sourceTree = "<group>"; };
 		BC0387E611CEC07A0080C552 /* AbstractTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTest.h; sourceTree = "<group>"; };
 		BC0387E711CEC07A0080C552 /* AbstractTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTest.m; sourceTree = "<group>"; };
@@ -440,7 +440,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53D229AD0C961B9900276605 /* JSON.framework in Frameworks */,
+				53D229AD0C961B9900276605 /* JSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +487,7 @@
 		53D229820C96121600276605 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53D229810C96121600276605 /* JSON.framework */,
+				53D229810C96121600276605 /* JSON */,
 				53D2298D0C96122A00276605 /* Tests.octest */,
 				FE2BBD800D8B0D3900184787 /* libjson.a */,
 				FE2BBDAB0D8B0EE000184787 /* libjsontests.octest */,
@@ -744,7 +744,7 @@
 			);
 			name = JSON;
 			productName = JSON;
-			productReference = 53D229810C96121600276605 /* JSON.framework */;
+			productReference = 53D229810C96121600276605 /* JSON */;
 			productType = "com.apple.product-type.framework";
 		};
 		53D2298C0C96122A00276605 /* Tests */ = {
@@ -826,7 +826,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 53D229740C9611FF00276605 /* Build configuration list for PBXProject "JSON" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 53D229710C9611FF00276605;
 			productRefGroup = 53D229820C96121600276605 /* Products */;
 			projectDirPath = "";
@@ -1457,7 +1464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1468,6 +1475,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -1476,7 +1484,7 @@
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/JSON;
 				PRODUCT_NAME = json;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/JSON;
-				SDKROOT = "";
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};
@@ -1484,7 +1492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
@@ -1502,7 +1510,7 @@
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/JSON;
 				PRODUCT_NAME = json;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/JSON;
-				SDKROOT = "";
+				SDKROOT = iphoneos4.1;
 				SKIP_INSTALL = NO;
 			};
 			name = Release;
