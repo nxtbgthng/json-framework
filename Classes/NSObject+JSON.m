@@ -58,3 +58,16 @@
 }
 
 @end
+
+
+@implementation NSData (NSData_SBJsonParsing)
+
+- (id)JSONValue {
+	NSString *jsonString = [[NSString alloc] initWithData:self encoding:NSUTF8StringEncoding];
+	id jsonValue = [jsonString JSONValue];
+	[jsonString release];
+
+	return jsonValue;
+}
+
+@end

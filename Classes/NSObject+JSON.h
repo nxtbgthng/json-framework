@@ -58,4 +58,12 @@
 
 @end
 
+/// Adds JSON parsing methods to NSData
+@interface NSData (NSData_SBJsonParsing)
+
+/// Returns the NSDictionary or NSArray represented by the receiver's JSON representation, or nil on error
+- (id)JSONValue;
+
+@end
+
 
